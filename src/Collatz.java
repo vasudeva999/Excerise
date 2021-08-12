@@ -4,14 +4,14 @@ public class Collatz {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number : ");
-        int n = sc.nextInt(), ans=0;
+        int number = sc.nextInt(), ans=0;
         System.out.println();
-        while (n!=1){
-            if (n%2==0)
-                ans=n/2;
+        while (number!=1){
+            if (number%2==0)
+                ans=number/2;
             else
-                ans=3*n+1;
-            n=ans;
+                ans=3*number+1;
+            number=ans;
             System.out.println(ans);
         }
     }

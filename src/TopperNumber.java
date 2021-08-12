@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class topper_number {
+public class TopperNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number: ");
-        int even_sum=0, odd_sum=0, n= sc.nextInt(), digit=0;
-        while (n!=0){
-            digit=n%10;
-            n/=10;
+        int even_sum=0, odd_sum=0, number= sc.nextInt(), digit=0;
+        while (number!=0){
+            digit=number%10;
+            number/=10;
             if (digit%2==0)
                 even_sum+=digit;
             else
